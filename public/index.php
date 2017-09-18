@@ -10,10 +10,11 @@ function runScript(e) {
 }
 function getResponse() {
 	var str =  document.getElementById("chatform").elements[0].value;
-    if (str.length == 0) { 
+    if (str.length == 0) {
         document.getElementById("response").innerHTML = "";
         return;
     } else {
+			//Hello
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
@@ -45,7 +46,7 @@ function getResponse() {
 	<form id="chatform">
   Message :<br>
   <input type="text" name="message" value="Enter Your Message here" onkeypress="return runScript(event)"><br>
-</form>	
+</form>
 <button type="button" onclick="getResponse()">submit</button>
 
 <div id="response1">
