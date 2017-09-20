@@ -13,7 +13,7 @@ function runScript(e) {
 function getResponse() {
 	var str =  document.getElementById("chatform").elements[0].value;
     if (str.length == 0) { 
-        document.getElementById("response").innerHTML = "";
+       // document.getElementById("response").innerHTML = "";
         return;
     } else {
         var xmlhttp = new XMLHttpRequest();
@@ -38,7 +38,9 @@ function getResponse() {
         xmlhttp.open("GET", "insert.php?message=" + str, true);
         xmlhttp.send();
     }
+document.getElementById("chatform").elements[0].value="";
 }
+
 </script>
 
 
@@ -48,7 +50,10 @@ function getResponse() {
   <section class="mdc-card__primary">
 <h3 class="mdc-typography--display1" style="width:150px; margin:10 auto;">Message:</h3>
 	<form id="chatform">
-  <input type="text" class="mdc-textfield__input" name="message" value="Enter Your Message here" onkeypress="return runScript(event)"><br>
+<label for="message"> Enter Your Message Here: </label>
+<div class="mdc-textfield"> 
+ <input type="text" class="mdc-textfield__input" name="message" id="message" onkeypress="return runScript(event)" >
+</div>
 </form>	
 <button type="button" class="mdc-button  mdc-button--raised mdc-button--primary" onclick="getResponse()">submit</button>
 <br> <br>
