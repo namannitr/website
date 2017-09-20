@@ -1,6 +1,8 @@
-<html>
+<html  class="mdc-typography">
 	<head>
-	<title> Naman </title>
+	<title> Naman's Website </title>
+	<link rel="stylesheet"
+          href="node_modules/material-components-web/dist/material-components-web.css">
 <script>
 function runScript(e) {
     if (e.keyCode == 13) {
@@ -42,19 +44,23 @@ function getResponse() {
 
 	</head>
 	<body>
+<div class="mdc-card" style="width:500px; margin:50 auto;" >
+  <section class="mdc-card__primary">
+<h3 class="mdc-typography--display1" style="width:150px; margin:10 auto;">Message:</h3>
 	<form id="chatform">
-  Message :<br>
-  <input type="text" name="message" value="Enter Your Message here" onkeypress="return runScript(event)"><br>
+  <input type="text" class="mdc-textfield__input" name="message" value="Enter Your Message here" onkeypress="return runScript(event)"><br>
 </form>	
-<button type="button" onclick="getResponse()">submit</button>
-
-<div id="response1">
-<div>
+<button type="button" class="mdc-button  mdc-button--raised mdc-button--primary" onclick="getResponse()">submit</button>
+<br> <br>
 <table id="response" border="1">
 <tr>
 <th>Message</ th>
 <th>Reply</ th>
 </tr>
 </table>
+</section>
+</div>
+<script src="node_modules/material-components-web/dist/material-components-web.js"></script>
+<script>mdc.autoInit()</script>
 </body>
 </html>
