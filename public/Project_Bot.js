@@ -13,16 +13,19 @@ function getResponse() {
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
           	var new_item = document.createElement("div");
-            new_item.setAttribute("class" , "mdc-snackbar__text");
+            var text = document.createElement("span");
             if(this.readyState==1){
-              new_item.appendChild(document.createTextNode(str));
+              text.setAttribute("color", "blue");
+              text.appendChild(document.createTextNode(str));
             }
             if (this.readyState == 4 && this.status == 200) {
                 new_item.setAttribute("align", "right");
+                  text.setAttribute("color", "green");
 		            var myArr = JSON.parse(this.responseText);
-                new_item.appendChild(document.createTextNode(myArr.reply));
+                text.appendChild(document.createTextNode(myArr.reply));
 	            }
             if(this.readyState ==1 || this.readyState==4){
+                new_item.appendChild(text);
                 document.getElementById("chat_box").insertBefore(new_item,document.getElementById("chat_box").firstChild );
               }
         };
