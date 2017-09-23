@@ -26,6 +26,13 @@
            </section>
          </div>
        </header>
+       <footer class="mdc-toolbar" style="position: fixed; height: auto; bottom:0; left: 0;">
+         <div class="mdc-toolbar__row">
+           <section class="mdc-toolbar__section">
+             <span class="mdc-toolbar__title">By: Naman K Agarwal</span>
+           </section>
+         </div>
+       </footer>
     <script src="node_modules/material-components-web/dist/material-components-web.js"></script>
     <script>mdc.autoInit()</script>
   </body>
