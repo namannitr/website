@@ -79,7 +79,21 @@
             </section>
         </div>
 </div>
-
+<script>
+var projects_card_var = document.getElementById('projects_card');
+projects_card_var.innerHTML="Hello"
+projects_card_var.style.cursor = 'pointer';
+projects_card_var.onclick = function() {
+      var xmlhttp = new XMLHttpRequest();
+      xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById('main_body').innerHTML = this.responseText;
+          };
+      };
+          xmlhttp.open("GET", "test.php", true);
+          xmlhttp.send();
+};
+</script>
        <footer class="mdc-toolbar" style="position: fixed; height: auto; bottom:0; left: 0;">
          <div class="mdc-toolbar__row">
            <section class="mdc-toolbar__section">
