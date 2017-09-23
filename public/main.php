@@ -53,28 +53,28 @@
       </div>
       <div class="mdc-card" style="height: 260px;width: 300px;position: absolute;left: 250px;top: 100px;">
             <section class="mdc-card__primary">
-              <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
-              <h2 class="mdc-card__subtitle">Subtitle here</h2>
+              <h1 class="mdc-card__title mdc-card__title--large">Personal Blog</h1>
+              <h2 class="mdc-card__subtitle">My Thoughts, Views and Experiences</h2>
             </section>
     </div>
 
     <div class="mdc-card" style="height: 260px;width: 300px;position: absolute;left: 600px;top: 100px;">
         <section class="mdc-card__primary">
-          <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
-          <h2 class="mdc-card__subtitle">Subtitle here</h2>
+          <h1 class="mdc-card__title mdc-card__title--large">Computer Science</h1>
+          <h2 class="mdc-card__subtitle">lets talk computer</h2>
         </section>
     </div>
 
     <div class="mdc-card" style="height: 260px;width: 300px;position: absolute;left: 250px;top: 450px;">
       <section class="mdc-card__primary">
-        <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
-        <h2 class="mdc-card__subtitle">Subtitle here</h2>
+        <h1 class="mdc-card__title mdc-card__title--large">Projects</h1>
+        <h2 class="mdc-card__subtitle">Explore my technical works</h2>
       </section>
   </div>
   <div class="mdc-card" style="height: 260px;width: 300px;position: absolute;left: 600px;top: 450px;">
       <section class="mdc-card__primary">
-        <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
-        <h2 class="mdc-card__subtitle">Subtitle here</h2>
+        <h1 class="mdc-card__title mdc-card__title--large">About Me</h1>
+        <h2 class="mdc-card__subtitle">Know me more!</h2>
       </section>
   </div>
 
