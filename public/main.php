@@ -8,7 +8,7 @@
           href="node_modules/material-design-icons-master/iconfont/material-icons.css">
   </head>
   <body bgcolor="black">
-    <header class="mdc-toolbar" style="position: fixed; height: 70px;">
+    <header class="mdc-toolbar mdc-toolbar--fixed " style="height: 70px;">
          <div class="mdc-toolbar__row">
            <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
              <a href="#" class="material-icons mdc-toolbar__icon--menu">menu</a>
