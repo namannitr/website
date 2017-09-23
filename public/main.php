@@ -50,7 +50,7 @@
           </div>
         </nav>
       </div>
-      <div class="mdc-card">
+      <div class="mdc-card" style="height:350px; width:350px;">
   <section class="mdc-card__primary">
     <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
     <h2 class="mdc-card__subtitle">Subtitle here</h2>
