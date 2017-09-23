@@ -26,7 +26,7 @@
            </section>
          </div>
        </header>
-       nav class="mdc-permanent-drawer">
+       <nav class="mdc-permanent-drawer">
         <div class="mdc-list-group">
           <nav class="mdc-list">
             <a class="mdc-list-item mdc-permanent-drawer--selected" href="#">
