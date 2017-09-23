@@ -3,12 +3,13 @@
 	<title> Naman's Website </title>
 	<link rel="stylesheet"
           href="node_modules/material-components-web/dist/material-components-web.css">
-<script src="Project_Bot.js">
-</script>
+
 
 
 	</head>
 	<body>
+		<script src="Project_Bot.js">
+		</script>
 <div class="mdc-component__containers__primary">
 <div class="mdc-card" style="width:500px; margin:50 auto;" >
   <section class="mdc-card__primary">
