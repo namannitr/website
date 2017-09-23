@@ -44,8 +44,8 @@
           </div>
         </nav>
       </div>
-      <div class="content">
-        <nav class="mdc-permanent-drawer mdc-typography" style="right:0; top:70px; height:100%; position: fixed; width: 200px;" >
+      <div class="content" style="right:0px;">
+        <nav class="mdc-permanent-drawer mdc-typography" style="right:0px; top:70px; height:100%; position: fixed; width: 200px;" >
          <div class="mdc-list-group">
            <nav class="mdc-list">
              <a class="mdc-list-item mdc-permanent-drawer--selected" href="#">
