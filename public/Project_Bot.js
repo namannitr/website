@@ -15,12 +15,12 @@ function getResponse() {
           	var new_item = document.createElement("div");
             var text = document.createElement("span");
             if(this.readyState==1){
-              text.setAttribute("color", "blue");
+              text.setAttribute("style", "color:blue;");
               text.appendChild(document.createTextNode(str));
             }
             if (this.readyState == 4 && this.status == 200) {
                 new_item.setAttribute("align", "right");
-                  text.setAttribute("color", "green");
+                  text.setAttribute("styler", "color:green;");
 		            var myArr = JSON.parse(this.responseText);
                 text.appendChild(document.createTextNode(myArr.reply));
 	            }
