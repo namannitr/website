@@ -12,7 +12,7 @@
     }
     </style>
     <script>
-    var projects_card_var = document.getElementById('projects_card');
+    var projects_card_var = document.getElementById('projects_card').innerHTML="Hello";
     projects_card_var.style.cursor = 'pointer';
     projects_card_var.onclick = function() {
           var xmlhttp = new XMLHttpRequest();
@@ -20,9 +20,9 @@
             if (this.readyState == 4 && this.status == 200) {
       		      document.getElementById('main_body').innerHTML = this.responseText;
               };
+          };
               xmlhttp.open("GET", "index.php", true);
               xmlhttp.send();
-          };
     };
     </script>
   </head>
