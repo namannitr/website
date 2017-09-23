@@ -12,6 +12,11 @@
          <div class="mdc-toolbar__row">
            <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
              <a href="#" class="material-icons mdc-toolbar__icon--menu">menu</a>
+             <button class="mdc-fab mdc-fab--plain material-icons" aria-label="favorite">
+                <span class="mdc-fab__icon">
+                  favorite
+                </span>
+             </button>
            </section>
            <section class="mdc-toolbar__section">
              <span class="mdc-toolbar__title">Home</span>
