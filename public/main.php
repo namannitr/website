@@ -6,6 +6,12 @@
           href="node_modules/material-components-web/dist/material-components-web.css">
      <link rel="stylesheet"
           href="node_modules/material-design-icons-master/iconfont/material-icons.css">
+    <style>
+    .my-card-container .mdc-card {
+      height: 350px;
+      width: 350px;
+    }
+    </style>
   </head>
   <body bgcolor="black">
     <header class="mdc-toolbar mdc-toolbar--fixed " style="height: 70px;">
