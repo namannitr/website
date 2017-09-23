@@ -13,7 +13,7 @@
            <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
              <a href="#" class="material-icons mdc-toolbar__icon--menu">menu</a>
              <button class="mdc-fab mdc-fab--plain material-icons" aria-label="favorite">
-               <img src="res/img/naman_profile.jpg" alt="Profile Photo" height="32" width="32"></img>
+               <img src="res/img/naman_profile.jpg" alt="Profile Photo" height="42" width="42"></img>
              </button>
            </section>
            <section class="mdc-toolbar__section">
