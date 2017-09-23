@@ -11,8 +11,8 @@ function getResponse() {
        return;
     } else {
         var xmlhttp = new XMLHttpRequest();
-        	var new_item = document.createElement("div");
         xmlhttp.onreadystatechange = function() {
+          	var new_item = document.createElement("div");
             if(this.readyState==1){
               new_item.appendChild(document.createTextNode(str));
             }
