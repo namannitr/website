@@ -8,12 +8,12 @@
           href="node_modules/material-design-icons-master/iconfont/material-icons.css">
   </head>
   <body bgcolor="black">
-    <header class="mdc-toolbar mdc-toolbar--fixed mdc-toolbar--waterfall" style="height: 80px;">
+    <header class="mdc-toolbar mdc-toolbar--fixed mdc-toolbar--waterfall" style="height: 70px;">
          <div class="mdc-toolbar__row">
            <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
              <a href="#" class="material-icons mdc-toolbar__icon--menu">menu</a>
              <button class="mdc-fab mdc-fab--plain material-icons" aria-label="favorite" data-mdc-auto-init="MDCRipple">
-               <img src="res/img/naman_profile.jpg" alt="Profile Photo" height="52" width="52"></img>
+               <img src="res/img/naman_profile.jpg" alt="Profile Photo" height="60" width="60"></img>
              </button>
            </section>
            <section class="mdc-toolbar__section">
