@@ -14,6 +14,9 @@
              <a href="#" class="material-icons mdc-toolbar__icon--menu">menu</a>
              <span class="mdc-toolbar__title">Title</span>
            </section>
+           <section class="mdc-toolbar__section">
+             <span class="mdc-toolbar__title">Title</span>
+           </section>
            <section class="mdc-toolbar__section mdc-toolbar__section--align-end" role="toolbar">
              <a href="#" class="material-icons mdc-toolbar__icon" aria-label="Download" alt="Download">file_download</a>
              <a href="#" class="material-icons mdc-toolbar__icon" aria-label="Print this page" alt="Print this page">print</a>
