@@ -44,6 +44,26 @@
           </div>
         </nav>
       </div>
+      <div class="content">
+        <nav class="mdc-permanent-drawer mdc-typography" style="right:0; top:70px; height:100%; position: fixed; width: 200px;" >
+         <div class="mdc-list-group">
+           <nav class="mdc-list">
+             <a class="mdc-list-item mdc-permanent-drawer--selected" href="#">
+               <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">inbox</i>Inbox
+             </a>
+             <a class="mdc-list-item" href="#">
+               <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Star
+             </a>
+             <a class="mdc-list-item" href="#">
+               <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">send</i>Sent Mail
+             </a>
+             <a class="mdc-list-item" href="#">
+               <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">drafts</i>Drafts
+             </a>
+           </nav>
+         </div>
+       </nav>
+     </div>
        <footer class="mdc-toolbar" style="position: fixed; height: auto; bottom:0; left: 0;">
          <div class="mdc-toolbar__row">
            <section class="mdc-toolbar__section">
