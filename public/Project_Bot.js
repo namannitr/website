@@ -20,7 +20,7 @@ function getResponse() {
             }
             if (this.readyState == 4 && this.status == 200) {
                 new_item.setAttribute("align", "right");
-                  text.setAttribute("styler", "color:green;");
+                  text.setAttribute("style", "color:green;");
 		            var myArr = JSON.parse(this.responseText);
                 text.appendChild(document.createTextNode(myArr.reply));
 	            }
