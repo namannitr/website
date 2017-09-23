@@ -12,7 +12,8 @@
     }
     </style>
     <script>
-    var projects_card_var = document.getElementById('projects_card').innerHTML="Hello";
+    var projects_card_var = document.getElementById('projects_card');
+    projects_card_var.innerHTML="Hello"
     projects_card_var.style.cursor = 'pointer';
     projects_card_var.onclick = function() {
           var xmlhttp = new XMLHttpRequest();
