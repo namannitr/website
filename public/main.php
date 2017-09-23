@@ -27,7 +27,7 @@
          </div>
        </header>
        <div class="content">
-         <nav class="mdc-permanent-drawer mdc-typography" >
+         <nav class="mdc-permanent-drawer mdc-typography" style="left:0; top:70px; height:100%; position: fixed;" >
           <div class="mdc-list-group">
             <nav class="mdc-list">
               <a class="mdc-list-item mdc-permanent-drawer--selected" href="#">
