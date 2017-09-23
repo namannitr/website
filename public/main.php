@@ -12,10 +12,9 @@
          <div class="mdc-toolbar__row">
            <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
              <a href="#" class="material-icons mdc-toolbar__icon--menu">menu</a>
-             <span class="mdc-toolbar__title">Title</span>
            </section>
            <section class="mdc-toolbar__section">
-             <span class="mdc-toolbar__title">Title</span>
+             <span class="mdc-toolbar__title">Home</span>
            </section>
            <section class="mdc-toolbar__section mdc-toolbar__section--align-end" role="toolbar">
              <a href="#" class="material-icons mdc-toolbar__icon" aria-label="Download" alt="Download">file_download</a>
