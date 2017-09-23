@@ -93,7 +93,6 @@
         <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
       </section>
   </div>
-
   <div class="mdc-card" style="height: 300px;width: 300px;position: absolute;left: 600px;top: 450px;">
       <section class="mdc-card__primary">
         <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
