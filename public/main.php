@@ -19,7 +19,9 @@
            <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
              <a href="#" class="material-icons mdc-toolbar__icon--menu">menu</a>
              <button class="mdc-fab mdc-fab--plain material-icons" aria-label="favorite" data-mdc-auto-init="MDCRipple">
-               <img src="res/img/naman_profile.jpg" alt="Profile Photo" height="60" width="60"></img>
+               <div>
+                 <img src="res/img/naman_profile.jpg" alt="Profile Photo" height="60" width="60"></img>
+               </div>
              </button>
            </section>
            <section class="mdc-toolbar__section">
@@ -50,22 +52,33 @@
           </div>
         </nav>
       </div>
-      <div class="mdc-card" style="height:350px; width:350px;">
-  <section class="mdc-card__primary">
-    <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
-    <h2 class="mdc-card__subtitle">Subtitle here</h2>
-  </section>
-  <section class="mdc-card__supporting-text">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-    commodo consequat.
-  </section>
-  <section class="mdc-card__actions">
-    <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
-    <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
-  </section>
-</div>
+      <div class="mdc-card" style="height: 300px;width: 300px;margin-left: 250px;margin-top: 80px;">
+        <section class="mdc-card__primary">
+          <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
+          <h2 class="mdc-card__subtitle">Subtitle here</h2>
+        </section>
+        <section class="mdc-card__supporting-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        </section>
+        <section class="mdc-card__actions">
+          <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
+          <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
+        </section>
+    </div>
+
+    <div class="mdc-card" style="height: 300px;width: 300px;margin-left: 600px;margin-top: 80px;">
+      <section class="mdc-card__primary">
+        <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
+        <h2 class="mdc-card__subtitle">Subtitle here</h2>
+      </section>
+      <section class="mdc-card__supporting-text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      </section>
+      <section class="mdc-card__actions">
+        <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
+        <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
+      </section>
+  </div>
 
 
        <footer class="mdc-toolbar" style="position: fixed; height: auto; bottom:0; left: 0;">
