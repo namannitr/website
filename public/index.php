@@ -1,5 +1,5 @@
 <?php
-echo htmlspecialchars(\"
+echo htmlspecialchars("
 		<script src=\"Project_Bot.js\">
 		</script>
 <div class=\"mdc-component__containers__primary\">
