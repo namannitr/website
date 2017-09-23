@@ -36,16 +36,16 @@
           <div class="mdc-list-group">
             <nav class="mdc-list">
               <a class="mdc-list-item mdc-permanent-drawer--selected" href="#">
-                <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">inbox</i>Inbox
+                <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">send</i>Blog
               </a>
               <a class="mdc-list-item" href="#">
-                <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Star
+                <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">send</i>Science
               </a>
               <a class="mdc-list-item" href="#">
-                <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">send</i>Sent Mail
+                <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">send</i>Projects
               </a>
               <a class="mdc-list-item" href="#">
-                <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">drafts</i>Drafts
+                <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">send</i>About Me
               </a>
             </nav>
           </div>
