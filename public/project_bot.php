@@ -18,15 +18,11 @@
 </div>
 </form>
 <button class="mdc-button mdc-button--raised" data-mdc-auto-init="MDCRipple"  onclick="getResponse()">submit</button>
-<br> <br>
-<table>
-<tr>
-<th>Message</ th>
-<th>Reply</ th>
-</tr>
-</table>
+<br>
 <table id="response" border="1">
 </table>
+<div id="chat_box">
+</div>
 </section>
 </div>
 </div>
