@@ -21,13 +21,11 @@
            </section>
            <section class="mdc-toolbar__section mdc-toolbar__section--align-end" role="toolbar">
              <a href="#" class="material-icons mdc-toolbar__icon" aria-label="Download" alt="Download">file_download</a>
-             <a href="#" class="material-icons mdc-toolbar__icon" aria-label="Print this page" alt="Print this page">print</a>
-             <a href="#" class="material-icons mdc-toolbar__icon" aria-label="Bookmark this page" alt="Bookmark this page">bookmark</a>
            </section>
          </div>
        </header>
        <div class="content">
-         <nav class="mdc-permanent-drawer mdc-typography" style="left:0; top:70px; height:100%; position: fixed;" >
+         <nav class="mdc-permanent-drawer mdc-typography" style="left:0; top:70px; height:100%; position: fixed; width: 150px;" >
           <div class="mdc-list-group">
             <nav class="mdc-list">
               <a class="mdc-list-item mdc-permanent-drawer--selected" href="#">
