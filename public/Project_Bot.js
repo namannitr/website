@@ -17,7 +17,7 @@ function getResponse() {
               new_item.appendChild(document.createTextNode(str));
             }
             if (this.readyState == 4 && this.status == 200) {
-                new_item.setAttribute("style", "align:right;")
+                new_item.setAttribute("align", "right");
 		            var myArr = JSON.parse(this.responseText);
                 new_item.appendChild(document.createTextNode(myArr.reply));
 	            }
