@@ -11,6 +11,20 @@
       margin:auto;
     }
     </style>
+    <script>
+    var projects_card_var = document.getElementById('projects_card');
+    projects_card_var.style.cursor = 'pointer';
+    projects_card_var.onclick = function() {
+          var xmlhttp = new XMLHttpRequest();
+          xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+      		      document.getElementById('main_body').innerHTML = this.responseText;
+              };
+              xmlhttp.open("GET", "index.php", true);
+              xmlhttp.send();
+          };
+    };
+    </script>
   </head>
   <body bgcolor="white">
     <header class="mdc-toolbar mdc-toolbar--fixed " style="height: 70px;">
@@ -51,32 +65,34 @@
           </div>
         </nav>
       </div>
-      <div class="mdc-card" style="height: 260px;width: 300px;position: absolute;left: 250px;top: 100px;">
+      <div id="main_body">
+        <div class="mdc-card" style="height: 260px;width: 300px;position: absolute;left: 250px;top: 100px;">
+              <section class="mdc-card__primary">
+                <h1 class="mdc-card__title mdc-card__title--large">Personal Blog</h1>
+                <h2 class="mdc-card__subtitle">My Thoughts, Views and Experiences</h2>
+              </section>
+        </div>
+
+        <div class="mdc-card" style="height: 260px;width: 300px;position: absolute;left: 600px;top: 100px;">
             <section class="mdc-card__primary">
-              <h1 class="mdc-card__title mdc-card__title--large">Personal Blog</h1>
-              <h2 class="mdc-card__subtitle">My Thoughts, Views and Experiences</h2>
+              <h1 class="mdc-card__title mdc-card__title--large">Computer Science</h1>
+              <h2 class="mdc-card__subtitle">lets talk computer</h2>
             </section>
-    </div>
+        </div>
 
-    <div class="mdc-card" style="height: 260px;width: 300px;position: absolute;left: 600px;top: 100px;">
-        <section class="mdc-card__primary">
-          <h1 class="mdc-card__title mdc-card__title--large">Computer Science</h1>
-          <h2 class="mdc-card__subtitle">lets talk computer</h2>
-        </section>
-    </div>
-
-    <div class="mdc-card" style="height: 260px;width: 300px;position: absolute;left: 250px;top: 450px;">
-      <section class="mdc-card__primary">
-        <h1 class="mdc-card__title mdc-card__title--large">Projects</h1>
-        <h2 class="mdc-card__subtitle">Explore my technical works</h2>
-      </section>
-  </div>
-  <div class="mdc-card" style="height: 260px;width: 300px;position: absolute;left: 600px;top: 450px;">
-      <section class="mdc-card__primary">
-        <h1 class="mdc-card__title mdc-card__title--large">About Me</h1>
-        <h2 class="mdc-card__subtitle">Know me more!</h2>
-      </section>
-  </div>
+        <div class="mdc-card" id="projects_card" style="height: 260px;width: 300px;position: absolute;left: 250px;top: 450px;">
+          <section class="mdc-card__primary">
+            <h1 class="mdc-card__title mdc-card__title--large">Projects</h1>
+            <h2 class="mdc-card__subtitle">Explore my technical works</h2>
+          </section>
+        </div>
+        <div class="mdc-card" style="height: 260px;width: 300px;position: absolute;left: 600px;top: 450px;">
+            <section class="mdc-card__primary">
+              <h1 class="mdc-card__title mdc-card__title--large">About Me</h1>
+              <h2 class="mdc-card__subtitle">Know me more!</h2>
+            </section>
+        </div>
+</div>
 
 
        <footer class="mdc-toolbar" style="position: fixed; height: auto; bottom:0; left: 0;">
