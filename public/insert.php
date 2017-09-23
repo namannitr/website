@@ -28,7 +28,7 @@ echo json_encode($reply);
 }
 
 catch(PDOException $e)
-    {
+    { //Testing Git ...
     echo "Connection failed: " . $e->getMessage();
     }
 return;
