@@ -44,26 +44,15 @@
           </div>
         </nav>
       </div>
-      <div class="content" style="right:0px;">
-        <nav class="mdc-permanent-drawer mdc-typography" style="right:0px; top:70px; height:100%; position: fixed; width: 200px;" >
-         <div class="mdc-list-group">
-           <nav class="mdc-list">
-             <a class="mdc-list-item mdc-permanent-drawer--selected" href="#">
-               <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">inbox</i>Inbox
-             </a>
-             <a class="mdc-list-item" href="#">
-               <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Star
-             </a>
-             <a class="mdc-list-item" href="#">
-               <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">send</i>Sent Mail
-             </a>
-             <a class="mdc-list-item" href="#">
-               <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">drafts</i>Drafts
-             </a>
-           </nav>
-         </div>
-       </nav>
-     </div>
+      <div class="mdc-component__containers__primary">
+        <div class="mdc-card" style="width:400px; height: 400px; margin:50 auto;" >
+          <section class="mdc-card__primary">
+            <h3 class="mdc-typography--display1" style="width:150px; margin:10 auto;">Blog</h3>
+          </section>`
+        </div>
+      </div>
+
+
        <footer class="mdc-toolbar" style="position: fixed; height: auto; bottom:0; left: 0;">
          <div class="mdc-toolbar__row">
            <section class="mdc-toolbar__section">
