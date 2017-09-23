@@ -4,7 +4,8 @@
     <title>Naman's Website</title>
     <link rel="stylesheet"
           href="node_modules/material-components-web/dist/material-components-web.css">
-     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+     <link rel="stylesheet"
+          href="node_modules/material-design-icons-master/iconfont/material-icons.css">
   </head>
   <body>
     <header class="mdc-toolbar mdc-toolbar--fixed mdc-toolbar--waterfall">
