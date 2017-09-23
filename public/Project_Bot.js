@@ -13,6 +13,7 @@ function getResponse() {
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
           	var new_item = document.createElement("div");
+            new_item.setAttribute("class" , "mdc-snackbar__text");
             if(this.readyState==1){
               new_item.appendChild(document.createTextNode(str));
             }

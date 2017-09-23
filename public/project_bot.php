@@ -19,8 +19,7 @@
 </form>
 <button class="mdc-button mdc-button--raised" data-mdc-auto-init="MDCRipple"  onclick="getResponse()">submit</button>
 <br>
-<table id="response" border="1">
-</table>
+<br>
 <div id="chat_box">
 </div>
 </section>
