@@ -19,7 +19,9 @@
            <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
              <a href="#" class="material-icons mdc-toolbar__icon--menu">menu</a>
              <button class="mdc-fab mdc-fab--plain material-icons" aria-label="favorite" data-mdc-auto-init="MDCRipple">
-               <img src="res/img/naman_profile.jpg" alt="Profile Photo" height="60" width="60"></img>
+               <div>
+                 <img src="res/img/naman_profile.jpg" alt="Profile Photo" height="60" width="60"></img>
+               </div>
              </button>
            </section>
            <section class="mdc-toolbar__section">
