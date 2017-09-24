@@ -7,6 +7,7 @@
 	<body>
 		<script src="Project_Bot.js">
 		</script>
+		<script src="https://code.responsivevoice.org/responsivevoice.js"></script>
 <div class="mdc-component__containers__primary">
 <div class="mdc-card" style="width:500px; margin:50 auto;" >
   <section class="mdc-card__primary">
