@@ -12,28 +12,33 @@ function getResponse() {
     } else {
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
-          	var new_item = document.createElement("div");
-            var text = document.createElement("span");
+
             if(this.readyState==1){
+              var new_item = document.createElement("div");
+              var text = document.createElement("span");
               text.setAttribute("style", "color:blue;");
               text.appendChild(document.createTextNode(str));
+
+              var new_item_2 = document.createElement("div");
+              var text_2 = document.createElement("span");
+              new_item_2.setAttribute("align", "right");
+              text_2.setAttribute("style", "color:green;");
+              text_2.appendChild(document.createTextNode("..."));
+
+              new_item.appendChild(text);
+              document.getElementById("chat_box").insertBefore(new_item,document.getElementById("chat_box").firstChild );
+
+              new_item_2.appendChild(text_2);
+              document.getElementById("chat_box").insertBefore(new_item_2,document.getElementById("chat_box").firstChild );
             }
             if (this.readyState == 4 && this.status == 200) {
-                new_item.setAttribute("align", "right");
-                  text.setAttribute("style", "color:green;");
+
 		            var myArr = JSON.parse(this.responseText);
-                text.appendChild(document.createTextNode(myArr.reply));
-                //var audio = new Audio('recent.mp3');
-                //  audio.load();
-                //audio.play();
+                text_2.innerHTML= myArr.reply;
                 if(document.getElementById("tts").checked == true){
                   responsiveVoice.speak(myArr.reply, "Hindi Female");
                 }
 	            }
-            if(this.readyState ==1 || this.readyState==4){
-                new_item.appendChild(text);
-                document.getElementById("chat_box").insertBefore(new_item,document.getElementById("chat_box").firstChild );
-              }
         };
         xmlhttp.open("GET", "insert.php?message=" + str, true);
         xmlhttp.send();
