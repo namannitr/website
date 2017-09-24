@@ -147,6 +147,12 @@
             </section>
         </div>
 </div>
+
+<div class="mdc-card" style="height: 100%; width: 250px;position: absolute; right:0px; top: 70px;">
+    <section class="mdc-card__primary">
+      <h2 class="mdc-card__subtitle">Whats new!</h2>
+    </section>
+</div>
 <script>
 var projects_card_var = document.getElementById('projects_card');
 projects_card_var.style.cursor = 'pointer';
