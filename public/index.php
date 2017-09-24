@@ -19,6 +19,26 @@
     });
   </script>
   <script>
+  function submit_username() {
+    var sign_in_sec = document.getElementById("sign_in_section");
+
+    sign_in_sec.innerHTML="";
+
+    var username_text_box = document.createElement("input");
+    username_text_box.setAttribute("class", "mdc-textfield__input");
+    username_text_box.setAttribute("Value", "password");
+    username_text_box.setAttribute("style","color:black; background:white; height:28px; text-align:center; text-transform:lowercase;");
+
+    var submit_ussername_button = document.createElement("button");
+    submit_ussername_button.setAttribute("class","mdc-button mdc-button--compact mdc-button--accent");
+    submit_ussername_button.setAttribute("data-mdc-auto-init", "MDCRipple");
+    submit_ussername_button.setAttribute("onclick", "submit_username()");
+    submit_ussername_button.innerHTML="Submit";
+
+    sign_in_sec.appendChild(username_text_box);
+    sign_in_sec.appendChild(submit_ussername_button);
+  //  <input type="text" class="mdc-textfield__input" name="message" id="message">
+  }
     function sign_in_click() {
       var sign_in_sec = document.getElementById("sign_in_section");
 
@@ -32,6 +52,7 @@
       var submit_ussername_button = document.createElement("button");
       submit_ussername_button.setAttribute("class","mdc-button mdc-button--compact mdc-button--accent");
       submit_ussername_button.setAttribute("data-mdc-auto-init", "MDCRipple");
+      submit_ussername_button.setAttribute("onclick", "submit_username()");
       submit_ussername_button.innerHTML="Submit";
 
       sign_in_sec.appendChild(username_text_box);
