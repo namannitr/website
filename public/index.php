@@ -46,7 +46,7 @@
               <a class="mdc-list-item" href="#">
                 <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">send</i>Science
               </a>
-              <a class="mdc-list-item" href="project_bot.php">
+              <a class="mdc-list-item" href="#project_bot">
                 <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">send</i>Projects
               </a>
               <a class="mdc-list-item" href="#">
