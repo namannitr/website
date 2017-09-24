@@ -33,7 +33,7 @@
            <section class="mdc-toolbar__section">
              <span class="mdc-toolbar__title">Home</span>
            </section>
-           <section class="mdc-toolbar__section mdc-toolbar__section--align-end" role="toolbar">
+           <section class="mdc-toolbar__section mdc-toolbar__section--align-end mdc-theme--dark" role="toolbar">
              <button class="mdc-button mdc-button--compact mdc-button--accent" data-mdc-auto-init="MDCRipple" >Sign in</button>
            </section>
          </div>
