@@ -29,7 +29,7 @@
              </button>
            </section>
            <section class="mdc-toolbar__section">
-             <span class="mdc-toolbar__title">Home</span>
+             <span id = "title_of_page" class="mdc-toolbar__title">Home</span>
            </section>
            <section class="mdc-toolbar__section mdc-toolbar__section--align-end mdc-theme--dark" id="sign_in_section" role="toolbar">
              <button class="mdc-button mdc-button--compact mdc-button--accent" data-mdc-auto-init="MDCRipple" onclick="sign_in_click()" >Sign in</button>
