@@ -10,7 +10,7 @@ window.onhashchange = function(){
 function project_bot_func() {
   //var win = window.open("project_bot.php", '_blank');
   //win.focus();
-
+  document.getElementById("title_of_page").innerHTML = "Project Bot";
   var main_body = document.getElementById("main_body");
   main_body.innerHTML = "";
 
