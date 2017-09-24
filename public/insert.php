@@ -9,7 +9,7 @@ $statement = $conn->prepare("insert into received_message (eko_id, message_body,
 "source" => 0,
 "type" => 0,
 "status" => 0));
-sleep(1);
+sleep(2);
 $statement = $conn->prepare("SELECT * FROM response_message order by message_id desc limit 1");
 $statement->execute();
 //print_r($satement->errorInfo());

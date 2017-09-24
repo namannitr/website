@@ -23,6 +23,8 @@ function getResponse() {
                   text.setAttribute("style", "color:green;");
 		            var myArr = JSON.parse(this.responseText);
                 text.appendChild(document.createTextNode(myArr.reply));
+                var audio = new Audio('recent.mp3');
+                audio.play();
 	            }
             if(this.readyState ==1 || this.readyState==4){
                 new_item.appendChild(text);
