@@ -19,6 +19,14 @@
 </div>
 </form>
 <button class="mdc-button mdc-button--raised" data-mdc-auto-init="MDCRipple"  onclick="getResponse()">submit</button>
+
+<div class="mdc-switch mdc-switch--disabled">
+  <input type="checkbox" id="another-basic-switch" class="mdc-switch__native-control" disabled />
+  <div class="mdc-switch__background">
+    <div class="mdc-switch__knob"></div>
+  </div>
+</div>
+<label for="another-basic-switch" class="mdc-switch-label">off/on</label>
 <br>
 <br>
 <div id="chat_box">
