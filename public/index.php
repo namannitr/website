@@ -12,12 +12,23 @@
     }
     </style>
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-4564976751393929",
-    enable_page_level_ads: true
-  });
-</script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-4564976751393929",
+      enable_page_level_ads: true
+    });
+  </script>
+  <script>
+    function sign_in_click() {
+      var sign_in_sec = document.getElementById("sign_in_section");
+      sign_in_sec.innerHTML="";
+      var username_text_box = document.createElement("input");
+      username_text_box.setAttribute("class", "mdc-textfield__input");
+      username_text_box.setAttribute("Value", "Username");
+      sign_in_sec.appendChild(username_text_box);
+    //  <input type="text" class="mdc-textfield__input" name="message" id="message">
+    }
+  </script>
   </head>
   <body bgcolor="white">
     <header class="mdc-toolbar mdc-toolbar--fixed " style="height: 70px;">
@@ -33,8 +44,8 @@
            <section class="mdc-toolbar__section">
              <span class="mdc-toolbar__title">Home</span>
            </section>
-           <section class="mdc-toolbar__section mdc-toolbar__section--align-end mdc-theme--dark" role="toolbar">
-             <button class="mdc-button mdc-button--compact mdc-button--accent" data-mdc-auto-init="MDCRipple" >Sign in</button>
+           <section class="mdc-toolbar__section mdc-toolbar__section--align-end mdc-theme--dark" id="sign_in_section" role="toolbar">
+             <button class="mdc-button mdc-button--compact mdc-button--accent" data-mdc-auto-init="MDCRipple" onclick="sign_in_click()" >Sign in</button>
            </section>
          </div>
        </header>
