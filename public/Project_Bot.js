@@ -24,6 +24,7 @@ function getResponse() {
 		            var myArr = JSON.parse(this.responseText);
                 text.appendChild(document.createTextNode(myArr.reply));
                 var audio = new Audio('recent.mp3');
+                audio.load();
                 audio.play();
 	            }
             if(this.readyState ==1 || this.readyState==4){
