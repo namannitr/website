@@ -117,7 +117,10 @@ function project_bot_func() {
 
 
 
-projects_card_var.onclick = project_bot_func;
+projects_card_var.onclick = function() {
+  location.hash = "Project_bot"
+};
+//project_bot_func;
 //<script src="Project_Bot.js">
 //</script>
 //<script src="https://code.responsivevoice.org/responsivevoice.js"></script>
