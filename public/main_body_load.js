@@ -1,11 +1,11 @@
 var projects_card_var = document.getElementById('projects_card');
 projects_card_var.style.cursor = 'pointer';
-projects_card_var.onclick = function() {
+projects_card_var.onclick = function () {
   //var win = window.open("project_bot.php", '_blank');
   //win.focus();
 
-  var main_body= document.getElementById("main_body");
-  main_body.innerHTML="";
+  var main_body = document.getElementById("main_body");
+  main_body.innerHTML = "";
 
   var bot_script_load = document.createElement("script");
   bot_script_load.type = "application/javascript";
@@ -29,7 +29,7 @@ projects_card_var.onclick = function() {
   var heading_text = document.createElement("h3");
   heading_text.setAttribute("class", "mdc-typography--display1");
   heading_text.setAttribute("style", "width:150px; margin:10 auto;");
-  heading_text.innerHTML - "Message:";
+  heading_text.innerHTML = "Message:";
   section_card_bot.appendChild(heading_text);
 
   var form_chat = document.createElement("form");
@@ -37,30 +37,30 @@ projects_card_var.onclick = function() {
 
   var div_text_field = document.createElement("div");
   div_text_field.class = "mdc-textfield";
-  div_text_field.data-mdc-auto-init = "MDCTextfield";
+  div_text_field.setAttribute("data-mdc-auto-init", "MDCTextfield");
   div_text_field.style="width:300px;"
 
   var input_text_message = document.createElement("input");
-  input_text_message.type="text";
-  input_text_message.class="mdc-textfield__input";
-  input_text_message.name="message";
-  input_text_message.id="message";
-  input_text_message.onkeypress="return runScript(event)";
+  input_text_message.type = "text";
+  input_text_message.class = "mdc-textfield__input";
+  input_text_message.name = "message";
+  input_text_message.id = "message";
+  input_text_message.onkeypress = "return runScript(event)";
   div_text_field.appendChild(input_text_message);
 
   var label_text_message = document.createElement("label");
-  label_text_message.for="message";
-  label_text_message.class="mdc-textfield__label";
-  label_text_message.innerHTML="Enter Your Message Here:";
+  label_text_message.for = "message";
+  label_text_message.class = "mdc-textfield__label";
+  label_text_message.innerHTML = "Enter Your Message Here:";
   div_text_field.appendChild(label_text_message);
 
   form_chat.appendChild(div_text_field);
   section_card_bot.appendChild(form_chat);
 
   var button_for_submit = document.createElement("button");
-  button_for_submit.class="mdc-button mdc-button--raised";
-  button_for_submit.data-mdc-auto-init="MDCRipple";
-  button_for_submit.onclick="getResponse()";
+  button_for_submit.class = "mdc-button mdc-button--raised";
+  button_for_submit.setAttribute("data-mdc-auto-init", "MDCRipple");
+  button_for_submit.onclick = "getResponse()";
   button_for_submit.innerHTML = "submit"
   section_card_bot.appendChild(button_for_submit);
 
@@ -68,26 +68,26 @@ projects_card_var.onclick = function() {
   div_for_switch.style = "left: 150px; display: -webkit-inline-box; position: relative;"
 
   var div_switch_button = document.createElement("div");
-  div_switch_button.class="mdc-switch";
+  div_switch_button.class = "mdc-switch";
 
   var input_switch_button = document.createElement("div");
-  input_switch_button.type="checkbox";
-  input_switch_button.id="tts";
-  input_switch_button.class="mdc-switch__native-control";
+  input_switch_button.type ="checkbox";
+  input_switch_button.id = "tts";
+  input_switch_button.class = "mdc-switch__native-control";
   div_switch_button.appendChild(input_switch_button);
 
   var div_switch_background = document.createElement("div");
-  div_switch_background.class="mdc-switch__background";
+  div_switch_background.class ="mdc-switch__background";
 
   var div_switch_knob = document.createElement("div");
-  div_switch_background.class="mdc-switch__knob";
+  div_switch_background.class = "mdc-switch__knob";
   div_switch_background.appendChild(div_switch_knob);
   div_switch_button.appendChild(div_switch_background);
   div_for_switch.appendChild(div_switch_button);
 
   var label_switch = document.createElement("label");
-  label_switch.for="basic-switch";
-  label_switch.class="mdc-switch-label";
+  label_switch.for = "basic-switch";
+  label_switch.class = "mdc-switch-label";
   label_switch.innerHTML = "TTS off/on";
   div_for_switch.appendChild(label_switch);
   section_card_bot.appendChild(div_for_switch);
@@ -98,7 +98,7 @@ projects_card_var.onclick = function() {
   section_card_bot.appendChild(break_line_2);
 
   var div_chat_box = document.createElement("div");
-  div_chat_box.id="chat_box";
+  div_chat_box.id = "chat_box";
   section_card_bot.appendChild(div_chat_box);
   div_card_bot.appendChild(section_card_bot);
   div_primary_container.appendChild(div_card_bot);
