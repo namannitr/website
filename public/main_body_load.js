@@ -3,7 +3,7 @@ projects_card_var.style.cursor = 'pointer';
 projects_card_var.onclick = function() {
   //var win = window.open("project_bot.php", '_blank');
   //win.focus();
-  
+
   var main_body= document.getElementById("main_body");
   main_body.innerHTML="";
 
@@ -139,4 +139,4 @@ projects_card_var.onclick = function() {
 //</div>
 //</section>
 //</div>
-</div>
+//</div>
