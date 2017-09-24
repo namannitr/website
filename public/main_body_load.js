@@ -1,6 +1,13 @@
 var projects_card_var = document.getElementById('projects_card');
 projects_card_var.style.cursor = 'pointer';
-projects_card_var.onclick = function () {
+window.onhashchange = function(){
+  switch(location.hash) {
+    case '#project_bot':
+      project_bot_func();
+    break;
+  }
+}
+function project_bot_func() {
   //var win = window.open("project_bot.php", '_blank');
   //win.focus();
 
@@ -109,6 +116,8 @@ projects_card_var.onclick = function () {
 };
 
 
+
+projects_card_var.onclick = project_bot_func();
 //<script src="Project_Bot.js">
 //</script>
 //<script src="https://code.responsivevoice.org/responsivevoice.js"></script>
