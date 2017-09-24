@@ -7,6 +7,9 @@
      <link rel="stylesheet"
           href="node_modules/material-design-icons-master/iconfont/material-icons.css">
     <script src="index_load.js"></script>
+    <script src="Project_Bot.js">
+		</script>
+		<script src="https://code.responsivevoice.org/responsivevoice.js"></script>
     <style>
     section.mdc-card__primary{
       margin:auto;
