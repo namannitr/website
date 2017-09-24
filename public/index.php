@@ -53,7 +53,7 @@
           </div>
         </nav>
       </div>
-      <div id="main_body">
+      <div id="main_body" class="mdc-component__containers__primary">
         <div class="mdc-card" style="height: 260px;width: 300px;position: absolute;left: 250px;top: 100px;">
               <section class="mdc-card__primary">
                 <h1 class="mdc-card__title mdc-card__title--large">Personal Blog</h1>
@@ -82,7 +82,7 @@
         </div>
 </div>
 
-<div class="mdc-card" style="height: 100%; width: 400px;position: absolute; left:1030px; top: 75px;">
+<div class="mdc-card" style="height: 100%; width: 400px;position: absolute; right:10px; top: 75px;">
     <section class="mdc-card__primary">
       <h2 class="mdc-card__subtitle">Whats new!</h2>
     </section>
