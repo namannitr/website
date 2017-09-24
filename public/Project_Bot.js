@@ -26,7 +26,7 @@ function getResponse() {
                 //var audio = new Audio('recent.mp3');
                 //  audio.load();
                 //audio.play();
-                responsiveVoice.speak(myArr.reply);
+                responsiveVoice.speak(myArr.reply, "Hindi Female");
 	            }
             if(this.readyState ==1 || this.readyState==4){
                 new_item.appendChild(text);
