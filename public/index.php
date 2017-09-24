@@ -148,7 +148,7 @@
         </div>
 </div>
 
-<div class="mdc-card" style="height: 100%; width: 250px;position: absolute; right:0px; top: 70px;">
+<div class="mdc-card" style="height: 100%; width: 400px;position: absolute; right:0px; top: 70px;">
     <section class="mdc-card__primary">
       <h2 class="mdc-card__subtitle">Whats new!</h2>
     </section>
