@@ -34,7 +34,7 @@
              <span class="mdc-toolbar__title">Home</span>
            </section>
            <section class="mdc-toolbar__section mdc-toolbar__section--align-end" role="toolbar">
-             <a href="#" class="material-icons mdc-toolbar__icon" aria-label="Download" alt="Download">file_download</a>
+             <button class="mdc-button mdc-button--compact" data-mdc-auto-init="MDCRipple" >Sign in</button>
            </section>
          </div>
        </header>
