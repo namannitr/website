@@ -11,6 +11,8 @@ function getResponse() {
        return;
     } else {
         var xmlhttp = new XMLHttpRequest();
+        var new_item_2 = document.createElement("div");
+        var text_2 = document.createElement("span");
         xmlhttp.onreadystatechange = function() {
 
             if(this.readyState==1){
@@ -19,8 +21,6 @@ function getResponse() {
               text.setAttribute("style", "color:blue;");
               text.appendChild(document.createTextNode(str));
 
-              var new_item_2 = document.createElement("div");
-              var text_2 = document.createElement("span");
               new_item_2.setAttribute("align", "right");
               text_2.setAttribute("style", "color:green;");
               text_2.appendChild(document.createTextNode("..."));
