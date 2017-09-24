@@ -19,7 +19,11 @@
 </div>
 </form>
 <button class="mdc-button mdc-button--raised" data-mdc-auto-init="MDCRipple"  onclick="getResponse()">submit</button>
-
+<div style="
+    left: 150px;
+    display: -webkit-inline-box;
+    position: relative;
+">
 <div class="mdc-switch">
   <input type="checkbox" id="tts" class="mdc-switch__native-control" />
   <div class="mdc-switch__background">
@@ -27,6 +31,7 @@
   </div>
 </div>
 <label for="basic-switch" class="mdc-switch-label">TTS off/on</label>
+</div>
 <br>
 <br>
 <div id="chat_box">
