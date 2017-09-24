@@ -87,13 +87,7 @@
       <h2 class="mdc-card__subtitle">Whats new!</h2>
     </section>
 </div>
-<script>
-var projects_card_var = document.getElementById('projects_card');
-projects_card_var.style.cursor = 'pointer';
-projects_card_var.onclick = function() {
-  var win = window.open("project_bot.php", '_blank');
-  win.focus();
-};
+<script src="main_body_load.js">
 </script>
        <footer class="mdc-toolbar" style="position: fixed; height: auto; bottom:0; left: 0;">
          <div class="mdc-toolbar__row">
