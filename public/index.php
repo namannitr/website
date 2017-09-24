@@ -21,14 +21,13 @@
   <script>
     function sign_in_click() {
       var sign_in_sec = document.getElementById("sign_in_section");
-      sign_in_sec.setAttribute("style","background:white;")
 
       sign_in_sec.innerHTML="";
 
       var username_text_box = document.createElement("input");
       username_text_box.setAttribute("class", "mdc-textfield__input");
       username_text_box.setAttribute("Value", "Username");
-      username_text_box.setAttribute("style","color:black;");
+      username_text_box.setAttribute("style","color:black; background:white;");
 
       var submit_ussername_button = document.createElement("button");
       submit_ussername_button.setAttribute("class","mdc-button mdc-button--compact mdc-button--accent");
@@ -41,7 +40,7 @@
     }
   </script>
   </head>
-  <body bgcolor="white">
+  <body>
     <header class="mdc-toolbar mdc-toolbar--fixed " style="height: 70px;">
          <div class="mdc-toolbar__row">
            <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
