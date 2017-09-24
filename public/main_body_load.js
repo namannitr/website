@@ -18,7 +18,7 @@ projects_card_var.onclick = function () {
 
   var div_primary_container = document.createElement("div");
   div_primary_container.setAttribute("class", "mdc-component__containers__primary");
-  div_primary_container.setAttribute("style","position:fixed; left:370px; top:100px;");
+  div_primary_container.setAttribute("style","position:absolute; left:370px; top:100px;");
 
   var div_card_bot = document.createElement("div");
   div_card_bot.setAttribute("class", "mdc-card");
