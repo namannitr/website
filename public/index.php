@@ -59,6 +59,13 @@
       username_text_box.setAttribute("class", "mdc-textfield__input");
       username_text_box.setAttribute("Value", "Username");
       username_text_box.setAttribute("style","color:black; background:white; height:28px; text-align:center; text-transform:lowercase;");
+      username_text_box.onfocus = function(){
+        username_text_box.setAttribute("Value", "");
+      };
+      username_text_box.onfocusout = function(){
+        if(username_text_box.value == "")
+        username_text_box.setAttribute("Value", "username");
+      };
 
       var submit_ussername_button = document.createElement("button");
       submit_ussername_button.setAttribute("class","mdc-button mdc-button--compact mdc-button--accent");
