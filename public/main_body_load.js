@@ -104,6 +104,8 @@ projects_card_var.onclick = function () {
   div_card_bot.appendChild(section_card_bot);
   div_primary_container.appendChild(div_card_bot);
   main_body.appendChild(div_primary_container);
+
+  mdc.autoInit();
 };
 
 
