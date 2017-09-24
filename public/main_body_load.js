@@ -81,7 +81,7 @@ projects_card_var.onclick = function () {
   div_switch_background.setAttribute("class","mdc-switch__background");
 
   var div_switch_knob = document.createElement("div");
-  div_switch_background.setAttribute("class","mdc-switch__knob");
+  div_switch_knob.setAttribute("class","mdc-switch__knob");
   div_switch_background.appendChild(div_switch_knob);
   div_switch_button.appendChild(div_switch_background);
   div_for_switch.appendChild(div_switch_button);
