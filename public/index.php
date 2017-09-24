@@ -24,7 +24,7 @@
              <a href="#" class="material-icons mdc-toolbar__icon--menu">menu</a>
              <button class="mdc-fab mdc-fab--plain material-icons" aria-label="favorite" data-mdc-auto-init="MDCRipple">
                <div>
-                 <img src="res/img/naman_profile.jpg" alt="Profile Photo" height="60" width="60"></img>
+                 <img href="#home" src="res/img/naman_profile.jpg" alt="Profile Photo" height="60" width="60"></img>
                </div>
              </button>
            </section>
