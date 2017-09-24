@@ -1,4 +1,8 @@
 location.hash = "main";
+
+function go_to_home(){
+  location.href = "http://namannitr.com";
+}
 function sign_in() {
   var sign_in_sec = document.getElementById("sign_in_section");
   sign_in_sec.innerHTML="";
