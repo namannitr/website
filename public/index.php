@@ -63,8 +63,9 @@
         username_text_box.setAttribute("Value", "");
       };
       username_text_box.onfocusout = function(){
-        if(username_text_box.value == "")
-        username_text_box.setAttribute("Value", "username");
+        if(username_text_box.value == ""){
+          username_text_box.setAttribute("Value", "username");
+        }
       };
 
       var submit_ussername_button = document.createElement("button");
