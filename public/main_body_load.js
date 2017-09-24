@@ -118,7 +118,7 @@ function project_bot_func() {
 
 
 projects_card_var.onclick = function() {
-  location.hash = "Project_bot"
+  location.hash = "project_bot"
 };
 //project_bot_func;
 //<script src="Project_Bot.js">
