@@ -42,15 +42,15 @@ projects_card_var.onclick = function () {
 
   var input_text_message = document.createElement("input");
   input_text_message.type = "text";
-  input_text_message.class = "mdc-textfield__input";
+  input_text_message.setAttribute("class", "mdc-textfield__input");
   input_text_message.name = "message";
   input_text_message.id = "message";
-  input_text_message.onkeypress = "return runScript(event)";
+  input_text_message.setAttribute("onkeypress", "return runScript(event)");
   div_text_field.appendChild(input_text_message);
 
   var label_text_message = document.createElement("label");
-  label_text_message.for = "message";
-  label_text_message.class = "mdc-textfield__label";
+  label_text_message.setAttribute("for","message");
+  label_text_message.setAttribute("class","mdc-textfield__label");
   label_text_message.innerHTML = "Enter Your Message Here:";
   div_text_field.appendChild(label_text_message);
 
@@ -58,9 +58,9 @@ projects_card_var.onclick = function () {
   section_card_bot.appendChild(form_chat);
 
   var button_for_submit = document.createElement("button");
-  button_for_submit.class = "mdc-button mdc-button--raised";
+  button_for_submit.setAttribute("class","mdc-button mdc-button--raised");
   button_for_submit.setAttribute("data-mdc-auto-init", "MDCRipple");
-  button_for_submit.onclick = "getResponse()";
+  button_for_submit.setAttribute("onclick", "getResponse()");
   button_for_submit.innerHTML = "submit"
   section_card_bot.appendChild(button_for_submit);
 
@@ -68,26 +68,26 @@ projects_card_var.onclick = function () {
   div_for_switch.style = "left: 150px; display: -webkit-inline-box; position: relative;"
 
   var div_switch_button = document.createElement("div");
-  div_switch_button.class = "mdc-switch";
+  div_switch_button.setAttribute("class","mdc-switch");
 
-  var input_switch_button = document.createElement("div");
-  input_switch_button.type ="checkbox";
+  var input_switch_button = document.createElement("input");
+  input_switch_button.setAttribute("type","checkbox");
   input_switch_button.id = "tts";
-  input_switch_button.class = "mdc-switch__native-control";
+  input_switch_button.setAttribute("class","mdc-switch__native-control");
   div_switch_button.appendChild(input_switch_button);
 
   var div_switch_background = document.createElement("div");
   div_switch_background.class ="mdc-switch__background";
 
   var div_switch_knob = document.createElement("div");
-  div_switch_background.class = "mdc-switch__knob";
+  div_switch_background.setAttribute("class","mdc-switch__knob");
   div_switch_background.appendChild(div_switch_knob);
   div_switch_button.appendChild(div_switch_background);
   div_for_switch.appendChild(div_switch_button);
 
   var label_switch = document.createElement("label");
-  label_switch.for = "basic-switch";
-  label_switch.class = "mdc-switch-label";
+  label_switch.setAttribute("for","basic-switch");
+  label_switch.setAttribute("class","mdc-switch-label");
   label_switch.innerHTML = "TTS off/on";
   div_for_switch.appendChild(label_switch);
   section_card_bot.appendChild(div_for_switch);
