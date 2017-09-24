@@ -7,14 +7,14 @@ projects_card_var.onclick = function () {
   var main_body = document.getElementById("main_body");
   main_body.innerHTML = "";
 
-  var bot_script_load = document.createElement("script");
+  /*var bot_script_load = document.createElement("script");
   bot_script_load.type = "application/javascript";
   bot_script_load.setAttribute("src", "Project_Bot.js");
   main_body.appendChild(bot_script_load);
 
   var tts_script_load = document.createElement("script");
   tts_script_load.setAttribute("src", "https://code.responsivevoice.org/responsivevoice.js");
-  main_body.appendChild(tts_script_load);
+  main_body.appendChild(tts_script_load);*/
 
   var div_primary_container = document.createElement("div");
   div_primary_container.setAttribute("class", "mdc-component__containers__primary");
