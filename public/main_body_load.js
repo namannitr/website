@@ -18,6 +18,7 @@ projects_card_var.onclick = function () {
 
   var div_primary_container = document.createElement("div");
   div_primary_container.setAttribute("class", "mdc-component__containers__primary");
+  div_primary_container.setAttribute("style","position:fixed; left:300px; top:100px;");
 
   var div_card_bot = document.createElement("div");
   div_card_bot.setAttribute("class", "mdc-card");
@@ -38,13 +39,13 @@ projects_card_var.onclick = function () {
   var div_text_field = document.createElement("div");
   div_text_field.setAttribute("class", "mdc-textfield");
   div_text_field.setAttribute("data-mdc-auto-init", "MDCTextfield");
-  div_text_field.style="width:300px;"
+  div_text_field.setAttribute("style","width:300px;");
 
   var input_text_message = document.createElement("input");
-  input_text_message.type = "text";
+  input_text_message.setAttribute("type","text");
   input_text_message.setAttribute("class", "mdc-textfield__input");
-  input_text_message.name = "message";
-  input_text_message.id = "message";
+  input_text_message.setAttribute("name","message");
+  input_text_message.setAttribute("id","message");
   input_text_message.setAttribute("onkeypress", "return runScript(event)");
   div_text_field.appendChild(input_text_message);
 
@@ -61,23 +62,23 @@ projects_card_var.onclick = function () {
   button_for_submit.setAttribute("class","mdc-button mdc-button--raised");
   button_for_submit.setAttribute("data-mdc-auto-init", "MDCRipple");
   button_for_submit.setAttribute("onclick", "getResponse()");
-  button_for_submit.innerHTML = "submit"
+  button_for_submit.innerHTML = "Submit";
   section_card_bot.appendChild(button_for_submit);
 
   var div_for_switch = document.createElement("div");
-  div_for_switch.style = "left: 150px; display: -webkit-inline-box; position: relative;"
+  div_for_switch.setAttribute("style","left: 150px; display: -webkit-inline-box; position: relative;");
 
   var div_switch_button = document.createElement("div");
   div_switch_button.setAttribute("class","mdc-switch");
 
   var input_switch_button = document.createElement("input");
   input_switch_button.setAttribute("type","checkbox");
-  input_switch_button.id = "tts";
+  input_switch_button.setAttribute("id","tts");
   input_switch_button.setAttribute("class","mdc-switch__native-control");
   div_switch_button.appendChild(input_switch_button);
 
   var div_switch_background = document.createElement("div");
-  div_switch_background.class ="mdc-switch__background";
+  div_switch_background.setAttribute("class","mdc-switch__background");
 
   var div_switch_knob = document.createElement("div");
   div_switch_background.setAttribute("class","mdc-switch__knob");
@@ -98,7 +99,7 @@ projects_card_var.onclick = function () {
   section_card_bot.appendChild(break_line_2);
 
   var div_chat_box = document.createElement("div");
-  div_chat_box.id = "chat_box";
+  div_chat_box.setAttribute("id","chat_box");
   section_card_bot.appendChild(div_chat_box);
   div_card_bot.appendChild(section_card_bot);
   div_primary_container.appendChild(div_card_bot);
