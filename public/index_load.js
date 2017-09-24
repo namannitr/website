@@ -1,3 +1,4 @@
+location.hash = "main";
 function sign_in() {
   var sign_in_sec = document.getElementById("sign_in_section");
   sign_in_sec.innerHTML="";

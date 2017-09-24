@@ -5,6 +5,9 @@ window.onhashchange = function(){
     case '#project_bot':
       project_bot_func();
     break;
+    case '#home':
+      location.href = "http://namannitr.com"
+    break;
   }
 }
 function project_bot_func() {
