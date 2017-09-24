@@ -36,7 +36,7 @@ projects_card_var.onclick = function () {
   form_chat.setAttribute("id", "chatform");
 
   var div_text_field = document.createElement("div");
-  div_text_field.class = "mdc-textfield";
+  div_text_field.setAttribute("class", "mdc-textfield");
   div_text_field.setAttribute("data-mdc-auto-init", "MDCTextfield");
   div_text_field.style="width:300px;"
 
