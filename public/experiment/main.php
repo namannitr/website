@@ -13,7 +13,9 @@
       <div class="mdc-toolbar__row">
         <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
           <a href="#menu_navigation_bar" class="material-icons mdc-toolbar__icon--menu">menu</a>
-          <button> Image </button>
+            <button class="mdc-fab material-icons" data-mdc-auto-init="MDCRipple">
+              <img src="../res/img/naman_profile.jpg">
+            </button>
         </section>
         <section class="mdc-toolbar__section ">
           <span class="mdc-toolbar__title">Home</span>
