@@ -21,7 +21,7 @@
           <span class="mdc-toolbar__title">Home</span>
         </section>
         <section class="mdc-toolbar__section mdc-toolbar__section--align-end">
-          <a class="mdc-typography--subheading2" onclick="sign_in_func(); return false" onmouseover="this.style.textDecoration='underline'"
+          <a class="mdc-typography--subheading2" onclick="sign_in_func(); return false" onmouseover="this.style.textDecoration='underline'; this.style.cursor='pointer'"
 onmouseout="this.style.textDecoration='none'">Sign in </a>
         </section>
       </div>
