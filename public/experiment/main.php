@@ -14,7 +14,7 @@
         <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
           <a href="#menu_navigation_bar" class="material-icons mdc-toolbar__icon--menu">menu</a>
             <button class="mdc-fab material-icons" data-mdc-auto-init="MDCRipple">
-              <img src="../res/img/naman_profile.jpg">
+              <img src="../res/img/naman_profile.jpg" style="max-width:100%; max-height:100%;">
             </button>
         </section>
         <section class="mdc-toolbar__section ">
