@@ -21,7 +21,7 @@
           <span class="mdc-toolbar__title">Home</span>
         </section>
         <section class="mdc-toolbar__section mdc-toolbar__section--align-end">
-          <button> Hello</button>
+          <button class="mdc-button mdc-button--raised mdc-button--compact mdc-button--primary">Sign in</button>
         </section>
       </div>
     </header>
