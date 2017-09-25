@@ -25,6 +25,21 @@
         </section>
       </div>
     </header>
+    <div class="content">
+  <nav class="mdc-permanent-drawer mdc-typography">
+    <nav id="icon-with-text-demo" class="mdc-list">
+      <a class="mdc-list-item mdc-permanent-drawer--selected" href="#">
+        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">inbox</i>Inbox
+      </a>
+      <a class="mdc-list-item" href="#">
+        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Star
+      </a>
+    </nav>
+  </nav>
+  <main>
+    Page content goes here.
+  </main>
+</div>
     <script src="../node_modules/material-components-web/dist/material-components-web.js"></script>
     <script>mdc.autoInit()</script>
   </body>
