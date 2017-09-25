@@ -48,56 +48,56 @@
           </a>
         </nav>
       </nav>
+
+
+      <div class="mdc-card">
+        <section class="mdc-card__primary">
+          <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
+          <h2 class="mdc-card__subtitle">Subtitle here</h2>
+        </section>
+        <section class="mdc-card__actions">
+          <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
+          <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
+        </section>
+      </div>
+
+      <div class="mdc-card">
+        <section class="mdc-card__primary">
+          <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
+          <h2 class="mdc-card__subtitle">Subtitle here</h2>
+        </section>
+        <section class="mdc-card__actions">
+          <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
+          <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
+        </section>
+      </div>
+
+
+      <div class="mdc-card">
+        <section class="mdc-card__primary">
+          <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
+          <h2 class="mdc-card__subtitle">Subtitle here</h2>
+        </section>
+        <section class="mdc-card__actions">
+          <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
+          <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
+        </section>
+      </div>
+
+
+      <div class="mdc-card">
+        <section class="mdc-card__primary">
+          <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
+          <h2 class="mdc-card__subtitle">Subtitle here</h2>
+        </section>
+        <section class="mdc-card__actions">
+          <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
+          <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
+        </section>
+      </div>
+
+
     </div>
-    
-    <div class="mdc-card">
-      <section class="mdc-card__primary">
-        <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
-        <h2 class="mdc-card__subtitle">Subtitle here</h2>
-      </section>
-      <section class="mdc-card__actions">
-        <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
-        <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
-      </section>
-
-      <div class="mdc-card">
-        <section class="mdc-card__primary">
-          <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
-          <h2 class="mdc-card__subtitle">Subtitle here</h2>
-        </section>
-        <section class="mdc-card__actions">
-          <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
-          <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
-        </section>
-      </div>
-
-
-      <div class="mdc-card">
-        <section class="mdc-card__primary">
-          <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
-          <h2 class="mdc-card__subtitle">Subtitle here</h2>
-        </section>
-        <section class="mdc-card__actions">
-          <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
-          <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
-        </section>
-      </div>
-
-
-      <div class="mdc-card">
-        <section class="mdc-card__primary">
-          <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
-          <h2 class="mdc-card__subtitle">Subtitle here</h2>
-        </section>
-        <section class="mdc-card__actions">
-          <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
-          <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
-        </section>
-      </div>
-
-    </div>
-
-
     <script src="../node_modules/material-components-web/dist/material-components-web.js"></script>
     <script>mdc.autoInit()</script>
   </body>
