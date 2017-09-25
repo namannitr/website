@@ -26,12 +26,21 @@
     </header>
     <div class="content">
   <nav class="mdc-permanent-drawer mdc-typography">
-    <nav id="icon-with-text-demo" class="mdc-list">
-      <a class="mdc-list-item mdc-permanent-drawer--selected" href="#">
-        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">inbox</i>Inbox
+    <nav id="navigation_drawer" class="mdc-list">
+      <a class="mdc-list-item mdc-permanent-drawer--selected" href="#home">
+        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">send</i>Home
       </a>
       <a class="mdc-list-item" href="#">
-        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Star
+        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">send</i>Blog
+      </a>
+      <a class="mdc-list-item" href="#">
+        <i class="material-icons mdc-list-item__start-detail" aria-hidden="false">send</i>Computer Science
+      </a>
+      <a class="mdc-list-item" href="#">
+        <i class="material-icons mdc-list-item__start-detail" aria-hidden="false">send</i>Projects
+      </a>
+      <a class="mdc-list-item" href="#">
+        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">send</i>About Me
       </a>
     </nav>
   </nav>
