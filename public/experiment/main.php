@@ -12,7 +12,7 @@
     <header class="mdc-toolbar mdc-toolbar--waterfall">
       <div class="mdc-toolbar__row">
         <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
-            <button class="mdc-fab material-icons" data-mdc-auto-init="MDCRipple">
+            <button class="mdc-fab material-icons" data-mdc-auto-init="MDCRipple" style="margin-left:10px;">
               <img src="../res/img/naman_profile.jpg" style="max-width:100%; max-height:100%;">
             </button>
         </section>
@@ -20,7 +20,7 @@
           <span class="mdc-toolbar__title">Home</span>
         </section>
         <section class="mdc-toolbar__section mdc-toolbar__section--align-end">
-          <a class="mdc-typography--subheading2" onclick="sign_in_func(); return false" style="this.style.cursor:pointer; margin-right:10px;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none'">Sign in </a>
+          <a class="mdc-typography--subheading2" onclick="sign_in_func(); return false" style="cursor:pointer; margin-right:10px;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none'">Sign in </a>
         </section>
       </div>
     </header>
