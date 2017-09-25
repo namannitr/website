@@ -49,52 +49,26 @@
         </nav>
       </nav>
 
-
-      <div class="mdc-card">
-        <section class="mdc-card__primary">
-          <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
-          <h2 class="mdc-card__subtitle">Subtitle here</h2>
-        </section>
-        <section class="mdc-card__actions">
-          <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
-          <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
-        </section>
+      <div class="mdc-grid-list">
+  <ul class="mdc-grid-list__tiles">
+    <li class="mdc-grid-tile">
+      <div class="mdc-grid-tile__primary">
+        <img class="mdc-grid-tile__primary-content" src="my-image.jpg" />
       </div>
-
-      <div class="mdc-card">
-        <section class="mdc-card__primary">
-          <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
-          <h2 class="mdc-card__subtitle">Subtitle here</h2>
-        </section>
-        <section class="mdc-card__actions">
-          <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
-          <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
-        </section>
+      <span class="mdc-grid-tile__secondary">
+        <span class="mdc-grid-tile__title">Title</span>
+      </span>
+    </li>
+    <li class="mdc-grid-tile">
+      <div class="mdc-grid-tile__primary">
+        <img class="mdc-grid-tile__primary-content" src="my-image.jpg" />
       </div>
-
-
-      <div class="mdc-card">
-        <section class="mdc-card__primary">
-          <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
-          <h2 class="mdc-card__subtitle">Subtitle here</h2>
-        </section>
-        <section class="mdc-card__actions">
-          <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
-          <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
-        </section>
-      </div>
-
-
-      <div class="mdc-card">
-        <section class="mdc-card__primary">
-          <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
-          <h2 class="mdc-card__subtitle">Subtitle here</h2>
-        </section>
-        <section class="mdc-card__actions">
-          <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
-          <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
-        </section>
-      </div>
+      <span class="mdc-grid-tile__secondary">
+        <span class="mdc-grid-tile__title">Title</span>
+      </span>
+    </li>
+  </ul>
+</div>
 
 
     </div>
