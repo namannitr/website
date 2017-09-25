@@ -21,7 +21,7 @@
           <span class="mdc-toolbar__title">Home</span>
         </section>
         <section class="mdc-toolbar__section mdc-toolbar__section--align-end">
-          <span class="mdc-typography--subheading2" onclick="sign_in_func(); return false">Sign in </span>
+          <a class="mdc-typography--subheading2" onclick="sign_in_func(); return false">Sign in </a>
         </section>
       </div>
     </header>
