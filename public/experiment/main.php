@@ -6,9 +6,13 @@
           href="../node_modules/material-components-web/dist/material-components-web.css">
      <link rel="stylesheet"
           href="../node_modules/material-design-icons-master/iconfont/material-icons.css">
-
+    <style>
+    .mdc-card {
+      max-width: 350px;
+    }
+    </style>
   </head>
-  <body class="mdc-theme--dark">
+  <body>
     <header class="mdc-toolbar mdc-toolbar--waterfall">
       <div class="mdc-toolbar__row">
         <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
@@ -90,7 +94,7 @@
         <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
       </section>
     </div>
-    
+
     <script src="../node_modules/material-components-web/dist/material-components-web.js"></script>
     <script>mdc.autoInit()</script>
   </body>
