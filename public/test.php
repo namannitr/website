@@ -1,3 +1,6 @@
+<?php
+include 'dbconnect_test.php';
+?>
 <html  class="mdc-typography">
 	<head>
 	<title> Naman's Website </title>
