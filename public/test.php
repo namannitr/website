@@ -12,7 +12,7 @@ include 'dbconnect_test.php';
 <div class="mdc-card" style="width:500px; margin:50 auto;" >
   <section class="mdc-card__primary">
 <h3 class="mdc-typography--display1" style="width:150px; margin:10 auto;">Login:</h3>
-	<form id="chatform">
+	<form id="chatform" method="POST">
 <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield" style="width:300px;">
  <input type="text" class="mdc-textfield__input" name="message" id="message" onkeypress="return runScript(event)" >
 <label for="message" class="mdc-textfield__label"> Enter Your Message Here: </label>
@@ -21,6 +21,7 @@ include 'dbconnect_test.php';
  <input type="password" class="mdc-textfield__input" name="password" id="password" onkeypress="return runScript(event)" >
 <label for="password" class="mdc-textfield__label"> password </label>
 </div>
+<br>
 <button class="mdc-button mdc-button--raised" data-mdc-auto-init="MDCRipple">submit</button>
 </form>
 </section>
