@@ -8,7 +8,7 @@
 <div class="mdc-component__containers__primary">
 <div class="mdc-card" style="width:500px; margin:50 auto;" >
   <section class="mdc-card__primary">
-<h3 class="mdc-typography--display1" style="width:150px; margin:10 auto;">Message:</h3>
+<h3 class="mdc-typography--display1" style="width:150px; margin:10 auto;">Login:</h3>
 	<form id="chatform">
 <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield" style="width:300px;">
  <input type="text" class="mdc-textfield__input" name="message" id="message" onkeypress="return runScript(event)" >
