@@ -21,8 +21,8 @@ include 'dbconnect_test.php';
  <input type="password" class="mdc-textfield__input" name="password" id="password" onkeypress="return runScript(event)" >
 <label for="password" class="mdc-textfield__label"> password </label>
 </div>
+<button class="mdc-button mdc-button--raised" data-mdc-auto-init="MDCRipple">submit</button>
 </form>
-<button class="mdc-button mdc-button--raised" data-mdc-auto-init="MDCRipple"  onclick="getResponse()">submit</button>
 </section>
 </div>
 </div>
