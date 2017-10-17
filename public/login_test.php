@@ -30,6 +30,7 @@ $row = $statement->fetch();
 //$reply = array("message" => $_GET['message'], "reply" =>$row["message_body"]);
 //echo json_encode($reply);
 echo  row;
+echo "Naman";
 }
 
 catch(PDOException $e)
