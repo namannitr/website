@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!check>
 <html class="mdc-typography">
   <head>
     <title>Naman's Website</title>
@@ -48,5 +47,9 @@
 </aside>
     <script src="../node_modules/material-components-web/dist/material-components-web.js"></script>
     <script>mdc.autoInit()</script>
+    <script>
+    let drawer = new mdc.drawer.MDCTemporaryDrawer(document.querySelector('.mdc-temporary-drawer'));
+    document.querySelector('.menu').addEventListener('click', () => drawer.open = true);
+    </script>
   </body>
 </html>
