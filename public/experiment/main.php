@@ -49,29 +49,6 @@
           </a>
         </nav>
       </nav>
-
-      <div class="mdc-grid-list">
-  <ul class="mdc-grid-list__tiles">
-    <li class="mdc-grid-tile">
-      <div class="mdc-grid-tile__primary">
-        <img class="mdc-grid-tile__primary-content" src="my-image.jpg" />
-      </div>
-      <span class="mdc-grid-tile__secondary">
-        <span class="mdc-grid-tile__title">Title</span>
-      </span>
-    </li>
-    <li class="mdc-grid-tile">
-      <div class="mdc-grid-tile__primary">
-        <img class="mdc-grid-tile__primary-content" src="my-image.jpg" />
-      </div>
-      <span class="mdc-grid-tile__secondary">
-        <span class="mdc-grid-tile__title">Title</span>
-      </span>
-    </li>
-  </ul>
-</div>
-
-
     </div>
     <script src="../node_modules/material-components-web/dist/material-components-web.js"></script>
     <script>mdc.autoInit()</script>
