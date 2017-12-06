@@ -30,11 +30,9 @@
     </header>
     <aside class="mdc-temporary-drawer mdc-typography">
       <nav class="mdc-temporary-drawer__drawer">
-        <header class="mdc-temporary-drawer__header">
-          <div class="mdc-temporary-drawer__header-content">
-            Header here
-          </div>
-        </header>
+
+        <div class="mdc-temporary-drawer__toolbar-spacer"></div>
+
         <nav id="icon-with-text-demo" class="mdc-temporary-drawer__content mdc-list">
           <a class="mdc-list-item mdc-temporary-drawer--selected" href="#">
             <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">inbox</i>Inbox
@@ -44,12 +42,8 @@
           </a>
         </nav>
       </nav>
-</aside>
+    </aside>
     <script src="../node_modules/material-components-web/dist/material-components-web.js"></script>
     <script>mdc.autoInit()</script>
-    <script>
-    let drawer = new mdc.drawer.MDCTemporaryDrawer(document.querySelector('.mdc-temporary-drawer'));
-    document.querySelector('.menu').addEventListener('click', () => drawer.open = true);
-    </script>
   </body>
 </html>
