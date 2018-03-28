@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="plugins/images/favicon.png">
+    <title>Admin</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Menu CSS -->
+    <link href="plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+     <link href="plugins/bower_components/datepicker/bootstrap-datepicker.standalone.min.css" rel="stylesheet">
+    <!-- animation CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- color CSS -->
+    <link href="css/colors/default.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="fix-header">
+    <!-- ============================================================== -->
+    <!-- Preloader -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+        </svg>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Wrapper -->
+    <!-- ============================================================== -->
+    <div id="wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <nav class="navbar navbar-default navbar-static-top m-b-0">
+            <div class="navbar-header">
+
+                <ul class="nav navbar-top-links navbar-right pull-right">
+                    <li>
+                        <form role="search" class="app-search hidden-sm hidden-xs m-r-10">
+                            <input type="text" placeholder="Search..." class="form-control"> <a href=""><i class="fa fa-search"></i></a> </form>
+                    </li>
+                    <li>
+                        <a class="profile-pic" href="#"> <img src="plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">User</b></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-header -->
+            <!-- /.navbar-top-links -->
+            <!-- /.navbar-static-side -->
+        </nav>
+        <!-- End Top Navigation -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav slimscrollsidebar">
+                <div class="sidebar-head">
+                    <h3><span class="fa-fw open-close"><i class="ti-close ti-menu"></i></span> <span class="hide-menu">Navigation</span></h3>
+                </div>
+                <ul class="nav" id="side-menu">
+                    <li style="padding: 70px 0 0;">
+                        <a href="index.html" class="waves-effect"><i class="fa fa-clock-o fa-fw" aria-hidden="true"></i>Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="profile.html" class="waves-effect"><i class="fa fa-user fa-fw" aria-hidden="true"></i>Profile</a>
+                    </li>
+                    <li>
+                        <a  href="users.html" class="waves-effect"><i class="fa fa-table fa-fw" aria-hidden="true"></i>Users</a>
+                    </li>
+                    <li>
+                        <a  onclick="app.do.getGroups()" class="waves-effect"><i class="fa fa-table fa-fw" aria-hidden="true"></i>Groups</a>
+                    </li>
+   
+                </ul>
+
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page Content -->
+        <!-- ============================================================== -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row bg-title">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h4 class="page-title">Basic Table</h4> </div>
+                    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                        <a href="https://wrappixel.com/templates/ampleadmin/" target="_blank" class="btn btn-danger pull-right m-l-20 hidden-xs hidden-sm waves-effect waves-light"> 
+
+                        </a>
+   
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <!-- /row -->
+                <div class="row">
+                   <div class="col-sm-12 group_detail" style="display: none;">
+                        <div class="white-box">
+                            <h3 class="box-title group_name"></h3>
+                            <div class="" >
+                            </div>
+                          </div>
+
+                    </div>
+                    <div class="col-sm-12 user_detail" style="display: none;">
+                        <div class="white-box">
+                            <h3 class="box-title function_name"></h3>
+                            <div class="table-responsive table-detail" >
+
+
+ <div class="input-group date" >
+    <input type="text" class="form-control datepicker" value="All">
+    <div class="input-group-addon">
+        <span class="glyphicon glyphicon-th"></span>
+    </div>
+</div>
+
+
+
+<table class="table table-bordered salary-details" style="display: none;">
+
+          <tbody>
+            <tr>
+              <td>Base</td>
+              <td class="base_c"></td>
+            </tr>
+            <tr>
+              <td>FTD Bonus</td>
+              <td class="ftdbonus_c"></td>
+            </tr>
+            <tr>
+              <td>+Euro</td>
+              <td class="pluseu_c"></td>
+            </tr>
+            <tr>
+              <td>FTD This Month</td>
+              <td class="ftdthismonth_c"></td>
+            </tr>
+            <tr>
+              <td >Working Hours:</td>
+              <td class="workinghours_c"></td>
+            </tr>
+            <tr>
+              <td >Base : Based on Working Hours</td>
+              <td class="basesalaryfinal_c"></td>
+            </tr>
+            <tr>
+              <td >Total</td>
+              <td class="total_c"></td>
+            </tr>
+      
+          </tbody>
+        </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <div class="white-box">
+                            <p class="text-muted function_alt"></p>
+                            <div class="table-responsive table-container" >
+                                <table class="table">
+                                    <thead id="th_container">
+                                      
+                                    </thead>
+                                    <tbody id="tb_container">
+                                      
+                                    </tbody>
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+            <footer class="footer text-center"> 2018 &copy; </footer>
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Menu Plugin JavaScript -->
+    <script src="plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+    <script src="plugins/bower_components/datepicker/bootstrap-datepicker.min.js"></script>
+    
+    <!--slimscroll JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.js"></script>
+    <style type="text/css">
+      tr{
+        cursor: pointer;
+      }
+    </style>
+
+    <script type="text/javascript">
+      api='api/v1/';
+
+      app={
+
+        state:null,
+        user:null,
+        ftd:null,
+        run:null,
+
+        do:{
+          getGroups:function(){
+            $.ajax({
+              url: api+'getGroups',
+              type: 'POST',
+              dataType: 'json',
+
+            })
+            .done(function(data) {
+              console.log(data);
+               $('.user_detail').hide('slow/400/fast');
+              $('.function_alt').html('Groups');
+              $('#th_container').html('');
+              $('#tb_container').html('');
+                  $('.table-container').show('slow/400/fast');
+                    $('#th_container').html(
+                      '<tr>'+
+                        '<th>ID</th>'+
+                        '<th>Group Name</th>'+
+                        '<th>Supervisor</th>'+
+
+                      '</tr>');
+                    for (var i = 0 ; i < data.length; i++) {
+                      $('#tb_container').append(
+                        '<tr onclick="app.do.getUsersByGroup('+data[i].group_id+')">'+
+                          '<td>'+data[i].group_id+'</td>'+
+                          '<td>'+data[i].name+'</td>'+
+                          '<td>'+data[i].supervisor+'</td>'+
+
+                          '</tr>' 
+                        );
+                    }
+
+            })
+            .fail(function() {
+              console.log("error");
+            })
+
+            
+          },
+          getUsersByGroup:function(id){
+            $.ajax({
+              url: api+'getUsersByGroup/'+id,
+              type: 'POST',
+              dataType: 'json',
+            })
+            .done(function(data) {
+              $('.user_detail').hide('slow/400/fast');
+              $('#th_container').html('');
+              $('#tb_container').html('');
+              $('.function_alt').html('Group Operators');
+              $('.table-container').show('slow/400/fast');
+              $('.datepicker').val('All');
+
+                    $('#th_container').html(
+                      '<tr>'+
+                        '<th>ID</th>'+
+                        '<th>Name</th>'+
+                        '<th>Registred</th>'+
+                        '<th>Group</th>'+
+                        '<th>FTD Total</th>'+
+                      '</tr>');
+                    for (var i = 0 ; i < data.length; i++) {
+                      $('#tb_container').append(
+                        '<tr onclick="app.do.getUser('+data[i].id+')">'+
+                          '<td>'+data[i].id+'</td>'+
+                          '<td>'+data[i].name+'</td>'+
+                          '<td>'+data[i].reg_date+'</td>'+
+                          '<td>'+data[i].g_name+'</td>'+
+                          '<td>'+data[i].ftd_total+'</td>'+
+                          '</tr>' 
+                        );
+                    }
+
+            })
+            .fail(function() {
+              console.log("error");
+            })
+          },
+          getFtdByUser:function(id){
+            $.ajax({
+              url: api+'getFtdByUser/'+id,
+              type: 'POST',
+              dataType: 'json',
+            })
+            .done(function(data) {
+              $('#th_container').html('');
+              $('#tb_container').html('');
+              $('.function_alt').html('All FTD');
+              $('.table-container').show('slow/400/fast');
+
+                    $('#th_container').html(
+                      '<tr>'+
+                        '<th>ID</th>'+
+                        '<th>Client ID</th>'+
+                        '<th>Client Name</th>'+
+                        '<th>Client Email</th>'+
+                        '<th>Amount</th>'+
+                        '<th>Date</th>'+
+                        '<th>Note</th>'+
+                      '</tr>');
+                    for (var i = 0 ; i < data.length; i++) {
+                      $('#tb_container').append(
+                        '<tr>'+
+                          '<td>'+data[i].ftd_id+'</td>'+
+                          '<td>'+data[i].client_id+'</td>'+
+                          '<td>'+data[i].client_name+'</td>'+
+                          '<td>'+data[i].client_email+'</td>'+
+                          '<td>'+data[i].amount+'</td>'+
+                          '<td>'+data[i].ftd_date+'</td>'+
+                          '<td><textarea>'+data[i].note+'</textarea></td>'+
+                          '</tr>' 
+                        );
+                    }
+
+            })
+            .fail(function() {
+              console.log("error");
+            })
+            
+          },
+          getUser:function(id){
+            $.ajax({
+              url: api+'getUser/'+id,
+              type: 'POST',
+              dataType: 'json',
+            })
+            .done(function(data) {
+            	app.user=data.user_id;
+            $('.salary-details').hide();
+              $('.function_name').html(data.first_name+' '+data.middle_name+' '+data.last_name);
+              app.do.getFtdByUser(data.user_id);
+              $('.user_detail').show('slow/400/fast');
+
+            })
+            .fail(function() {
+              console.log("error");
+            })
+            
+          }
+
+        }
+
+      }
+$('.datepicker').datepicker({
+    format: "yyyy-mm",
+    startView: "months", 
+    minViewMode: "months",
+    autoclose: true
+});
+$('.datepicker').on('change', function() {
+
+  //console.log( this.value+'-01' );
+    $('.base_c').html('');
+   	$('.ftdbonus_c').html('');  	
+   	$('.workinghours_c').html('');  	
+   	$('.basesalaryfinal_c').html('');  	
+   	$('.pluseu_c').html('');
+   	$('.ftdthismonth_c').html('');
+   	$('.total_c').html('');
+  $.ajax({
+  	url: api+'getOperatorSalary/'+app.user+'/'+$('.datepicker').val()+'-01',
+  	type: 'POST',
+  	dataType: 'json',
+  })
+  .done(function(data) {
+  	console.log(data);
+  	$('.base_c').html(data.base_c);
+   	$('.ftdbonus_c').html(data.ftdbonus_c);  	
+   	$('.workinghours_c').html(data.workhours_c);  	
+   	$('.basesalaryfinal_c').html(data.basesalaryfinal_c);  	
+   	$('.pluseu_c').html(data.pluseu_c);
+   	$('.ftdthismonth_c').html(data.ftdthismonth_c);
+   	$('.total_c').html(data.total_c);
+   	$('.salary-details').show('slow/400/fast');
+
+   	$.ajax({
+   		url: api+'getFtdByUserAndDate/'+app.user+'/'+$('.datepicker').val()+'-01',
+   		type: 'POST',
+   		dataType: 'json',
+   	})
+   	.done(function(resp) {
+   		console.log("success");
+   			$('#th_container').html('');
+	 		  $('#tb_container').html('');
+	  		$('.function_alt').html('Selected Month FTDs');
+	  		$('.table-container').show('slow/400/fast');
+
+                    $('#th_container').html(
+                      '<tr>'+
+                        '<th>ID</th>'+
+                        '<th>Client ID</th>'+
+                        '<th>Client Name</th>'+
+                        '<th>Client Email</th>'+
+                        '<th>Amount</th>'+
+                        '<th>Date</th>'+
+                        '<th>Note</th>'+
+                      '</tr>');
+                    for (var i = 0 ; i < resp.length; i++) {
+                      $('#tb_container').append(
+                        '<tr>'+
+                          '<td>'+resp[i].ftd_id+'</td>'+
+                          '<td>'+resp[i].client_id+'</td>'+
+                          '<td>'+resp[i].client_name+'</td>'+
+                          '<td>'+resp[i].client_email+'</td>'+
+                          '<td>'+resp[i].amount+'</td>'+
+                          '<td>'+resp[i].ftd_date+'</td>'+
+                          '<td><textarea>'+resp[i].note+'</textarea></td>'+
+                          '</tr>' 
+                        );
+                    }
+   	})
+   	.fail(function() {
+   		$('.table-container').hide('slow/400/fast');
+   	})
+
+   	
+
+  })
+  .fail(function() {
+  	$('.table-container').hide('slow/400/fast');
+  })
+
+  
+})
+
+app.do.getGroups();
+    </script>
+</body>
+
+</html>
