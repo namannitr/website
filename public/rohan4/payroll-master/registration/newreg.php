@@ -85,8 +85,8 @@ if ( isset($_POST['submit']) ) {
 	if ( empty($errors) == true ) {
 //	 	if ( copy($file_tmp, $target_dir . $photocopy) ) {
 	 		extract($_POST);
-	 		$insertSQL = mysqli_query($db, "INSERT INTO `" . DB_PREFIX . "employees`(`emp_code`, `first_name`, `last_name`, `dob`, `gender`, `merital_status`, `nationality`, `address`, `city`, `state`, `country`, `email`, `mobile`, `telephone`, `identity_doc`, `identity_no`, `emp_type`, `joining_date`, `blood_group`, `created`) VALUES ('$curEmpID', '$first_name', '$last_name', '$dob', '$gender', '$merital_status', '$nationality', '$address', '$city', '$state', '$country', '$email', '$mobile', '$telephone', '$identification', '$id_no', '$employment_type', '$joining_date', '$bloodgrp', NOW())");
-	 		$_SESSION['success'] = '<p class="text-center"><span class="text-success">Employee registration successfully! Naman Agarwal</span></p>' . $insertSQL;
+	 		$insertSQL = mysqli_query($db, "INSERT INTO `" . DB_PREFIX . "employees`(`emp_code`, emp_password, `first_name`, `last_name`, `dob`, `gender`, `merital_status`, `nationality`, `address`, `city`, `state`, `country`, `email`, `mobile`, `telephone`, `identity_doc`, `identity_no`, `emp_type`, `joining_date`, `blood_group`, `created`) VALUES ('$curEmpID', 'employee', '$first_name', '$last_name', '$dob', '$gender', '$merital_status', '$nationality', '$address', '$city', '$state', '$country', '$email', '$mobile', '$telephone', '$identification', '$id_no', '$employment_type', '$joining_date', '$bloodgrp', NOW())");
+	 		$_SESSION['success'] = '<p class="text-center"><span class="text-success">Employee registration successfully! Naman</span></p>' . $insertSQL . 'Agarwal' . mysqli_error($db);
 	 		header('location:report.php?');
 //	 	} else {
 //	 		$errors['photo'] = '<span class="text-danger">Photo is not uploaded, please try again! </span>' . 'File Name photo: ' . $_FILES['photo']['name'] . 'Photocopy: ' . $photocopy . '  File Temp: ' .  $file_tmp . ' Target Dir: ' . $target_dir . 'File Type: ' . $file_type . ' File Extension:' . $file_ext;
