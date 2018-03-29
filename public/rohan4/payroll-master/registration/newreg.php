@@ -83,7 +83,7 @@ if ( isset($_POST['submit']) ) {
 	}
 
 	if ( empty($errors) == true ) {
-//	 	if ( copy($file_tmp, $target_dir . $photocopy) ) {
+//	 	if ( move_uploaded_file($file_tmp, $target_dir . $photocopy) ) {
 	 		extract($_POST);
 	 		$insertSQL = mysqli_query($db, "INSERT INTO `" . DB_PREFIX . "employees`(`emp_code`, emp_password, `first_name`, `last_name`, `dob`, `gender`, `merital_status`, `nationality`, `address`, `city`, `state`, `country`, `email`, `mobile`, `telephone`, `identity_doc`, `identity_no`, `emp_type`, `joining_date`, `blood_group`, `created`) VALUES ('$curEmpID', 'employee', '$first_name', '$last_name', '$dob', '$gender', '$merital_status', '$nationality', '$address', '$city', '$state', '$country', '$email', '$mobile', '$telephone', '$identification', '$id_no', '$employment_type', '$joining_date', '$bloodgrp', NOW())");
 	 		$_SESSION['success'] = '<p class="text-center"><span class="text-success">Employee registration successfully! Naman</span></p>' . $insertSQL . 'Agarwal' . mysqli_error($db);
